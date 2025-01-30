@@ -1,0 +1,25 @@
+[package]
+name = "unitycatalog-server"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+repository.workspace = true
+description.workspace = true
+rust-version.workspace = true
+publish = true
+
+[[bin]]
+name = "unitycatalog-server"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+tracing = { workspace = true, features = ["log"] }
+tracing-subscriber = { workspace = true, features = ["serde", "serde_json", "env-filter"]}
+sqlx = { workspace = true, features = ["macros", "runtime-tokio", "any", "postgres", "mysql", "chrono", "uuid"]}
+uuid = { workspace = true, features = ["v4", "serde"]}
+chrono = { workspace = true, features = ["serde"]}
+config = { workspace = true }
