@@ -1,0 +1,25 @@
+[workspace]
+members = ["server"]
+resolver = "3"
+default-members = ["server"]
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+version = "0.0.1"
+authors = ["Revanth Shalon Raj <revanthshalonraj@gmail.com>"]
+repository = "https://github.com/Revanthshalon/Unity-Catalog"
+description = "Open, Multi-modal Catalog for Data & AI - Written in Rust"
+rust-version = "1.84.0"
+
+[workspace.dependencies]
+tokio = { version = "^1.43.0" }
+serde = { version = "^1.0.217" }
+serde_json = { version = "^1.0.137" }
+tracing = { version = "^0.1.41" }
+tracing-subscriber = { version = "^0.3.19" }
+uuid = { version = "^1.12.1" }
+chrono = { version = "^0.4.39" }
+config = { version = "^0.15.6" }
+sqlx = { version = "^0.8.3" }
+
