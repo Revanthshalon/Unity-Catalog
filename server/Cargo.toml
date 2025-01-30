@@ -23,3 +23,5 @@ sqlx = { workspace = true, features = ["macros", "runtime-tokio", "any", "postgr
 uuid = { workspace = true, features = ["v4", "serde"]}
 chrono = { workspace = true, features = ["serde"]}
 config = { workspace = true }
+url = { workspace = true }
+aws-config = { workspace = true }

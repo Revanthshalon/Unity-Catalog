@@ -1,0 +1,26 @@
+[database]
+database-type = "postgres"
+username = "user"
+password = "password"
+host = "localhost"
+port = 8080
+database-name = "default"
+max-idle-connections = 10
+max-open-connections = 100
+connection-timeout = 30
+
+[server]
+environment = "dev"
+authorization = "disable"
+authorization-url = "test"
+token-url = "test"
+client-id = "test"
+client-secret = "test"
+redirect-port = 0
+cookie-timeout = "test"
+storage-root = "test"
+
+[[server.s3]]
+bucketPath = "bucketPath"
+region = "region"
+
